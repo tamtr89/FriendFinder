@@ -3,7 +3,16 @@ var friendsArray = [
         name: "Shelly",
         photo: "https://media.giphy.com/media/87hdP3j0T1iSxgrbz7/giphy.gif",
         score: [
-
+            "4",
+            "4",
+            "4",
+            "5",
+            "4",
+            "3",
+            "4",
+            "3",
+            "3",
+            "2"
         ]
     },
 
@@ -11,7 +20,16 @@ var friendsArray = [
         name: "Jessica",
         photo: "https://media.giphy.com/media/1fosbd3E9m2PN0FyHi/giphy.gif",
         score: [
-
+            "3",
+            "5",
+            "3",
+            "5",
+            "5",
+            "1",
+            "2",
+            "4",
+            "3",
+            "4"
         ]
     },
 
@@ -19,7 +37,16 @@ var friendsArray = [
         name: "Alexa",
         photo: "https://media.giphy.com/media/2WdRbiOCG2u9nyrsfW/giphy.gif",
         score: [
-
+            "3",
+            "2",
+            "5",
+            "4",
+            "3",
+            "1",
+            "4",
+            "5",
+            "3",
+            "5"
         ]
     },
 
@@ -27,7 +54,16 @@ var friendsArray = [
         name: "Lola",
         photo: "https://media.giphy.com/media/2rAL4rRUXEeqc1uj3V/giphy.gif",
         score: [
-
+            "4",
+            "4",
+            "3",
+            "5",
+            "4",
+            "2",
+            "4",
+            "4",
+            "3",
+            "4"
         ]
     }
 ];
