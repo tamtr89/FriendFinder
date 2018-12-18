@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Survey</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- CSS Link -->
     <!-- <link rel="stylesheet" type="text/css" href="../public/style.css"> -->
     <link rel="stylesheet" type="text/css" href="./survey.css">
@@ -39,138 +41,157 @@
                         <div class="form-group">
                             <h2>About you</h2>
                             <hr>
-                            <label for="name">What's your name? (Required)</label>
-                            <input type="input" class="form-control" id="yourname" placeholder="First name">
+                            <label for="name">What's your name? (Required)
+                                <input type="input" class="form-control" id="yourname" placeholder="First name">
                         </div>
 
                         <div class="form-group">
-                            <label for="photo">Your Photo (Required)</label>
-                            <input type="input" class="form-control" id="yourphoto" placeholder="Link your photo image">
+                            <label for="photo">Your Photo (Required)
+                                <input type="input" class="form-control" id="yourphoto" placeholder="Link your photo image">
                         </div>
                         <hr>
 
                         <h3>...<i class="far fa-comment-dots fa-2x"></i></i><i class="fas fa-question-circle fa-lg"></i><i
-                                class="far fa-question-circle fa-sm"></i><i class="fas fa-igloo fa-xs"></i>
-                            --Questions-- <i class="fas fa-igloo fa-xs"></i><i class="far fa-question-circle fa-sm"></i><i
-                                class="fas fa-question-circle fa-lg"></i><i class="far fa-comment-dots fa-2x"></i>...</h3>
+                                class="far fa-question-circle fa-sm"></i>
+                            --Questions-- <i class="far fa-question-circle fa-sm"></i><i class="fas fa-question-circle fa-lg"></i><i
+                                class="far fa-comment-dots fa-2x"></i>...</h3>
                         <hr>
 
                         <!-- question 1 -->
-                        <label class="question-style" for="q1">I think that [friend] is one of those people who quickly
-                            wins respect.</label>
-                        <select id="q1" class="chosen-select form-control sm-width mb-2 ">
-                            <option>Select an option</option>
+                        <h3>Question1</h3>
+                        <h4>I think that [friend] is one of those people who quickly
+                            wins respect. </h4>
+                        <select data-placeholder="" id="q1" class="chosen-select form-control sm-width mb-2">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
 
                         <!-- question 2  -->
-                        <label class="question-style" for="q2">If I could never be with [loved one], I would feel
-                            miserable.</label>
-                        <select id="q2" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question2</h3>
+                        <h4>If I could never be with [loved one], I would feel
+                            miserable.</h4>
+                        <select data-placeholder="" id="q2" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 3 -->
-                        <label class="question-style" for="q3">I have great confidence in [friend]’s good judgment.</label>
-                        <select id="q3" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question3</h3>
+                        <h4>I have great confidence in [friend]’s good judgment. </h4>
+                        <select data-placeholder="" id="q3" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 4 -->
-                        <label class="question-style" for="q4">When I am with [loved one], I spend a good deal of time
-                            just looking at him/her.</label>
-                        <select id="q4" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question4</h3>
+                        <h4> When I am with [loved one], I spend a good deal of time
+                            just looking at him/her.</h4>
+                        <select data-placeholder="" id="q4" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option v alue="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 5 -->
-                        <label class="question-style" for="q5">When I am with [friend], we are almost always in the
-                            same mood.</label>
-                        <select id="q5" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question5</h3>
+                        <h4> When I am with [friend], we are almost always in the
+                            same mood.</h4>
+                        <select data-placeholder="" id="q5" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 6 -->
-                        <label class="question-style" for="q6">If I were lonely, my first thought would be to seek
-                            [loved one] out.</label>
-                        <select id="q6" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question6</h3>
+                        <h4>If I were lonely, my first thought would be to seek
+                            [loved one] out. </h4>
+                        <select data-placeholder="" id="q6" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 7 -->
-                        <label class="question-style" for="q7">[Friend] is the sort of person whom I myself would like
-                            to be.</label>
-                        <select id="q7" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question7</h3>
+                        <h4>[Friend] is the sort of person whom I myself would like
+                            to be. </h4>
+                        <select data-placeholder="" id="q7" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 8 -->
-                        <label class="question-style" for="q8"> I would do almost anything for [loved one].</label>
-                        <select id="q8" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question8</h3>
+                        <h4> I would do almost anything for [loved one].</h4>
+                        <select data-placeholder="" id="q8" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 9 -->
-                        <label class="question-style" for="q9">Most people would react very favorably to [friend] after
-                            a brief acquaintance.</label>
-                        <select id="q9" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question9</h3>
+                        <h4> Most people would react very favorably to [friend] after
+                            a brief acquaintance.</h4>
+                        <select data-placeholder="" id="q9" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
 
                         <!-- question 10 -->
-                        <label class="question-style" for="q10">It would be hard for me to get along without [loved
-                            one].</label>
-                        <select id="q10" class="chosen-select form-control sm-width mb-2 ">
+                        <h3>Question10</h3>
+                        <h4>It would be hard for me to get along without [loved
+                            one]. </h4>
+                        <select data-placeholder="" id="q10" class="chosen-select form-control sm-width mb-2 ">
+                            <option value="">Select option</option>
                             <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2 (Somewhat Disagree)</option>
+                            <option value="2">2 </option>
                             <option value="3">3 (Meh)</option>
-                            <option value="4">4 (Somewhat agree)</option>
+                            <option value="4">4 </option>
                             <option value="5">5 (Strongly Agree</option>
                         </select>
                         <br>
@@ -204,22 +225,103 @@
                     </div>
 
                     <div class="modal-body">
-                        <h2 id="matchname"></h2>
-                        <img src="" alt="" id="matching">
+                        <h2 id="matchName"></h2>
+                        <img src="" alt="" id="matchImg">
                     </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <!--END container div-->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script> -->
 
-    <script type="text/javascript" src="./survey.js"></script>
+
+
+    <!-- <script type="text/javascript" src="./survey.js"></script> -->
+
+    <!-- =================================================================== -->
+    <script>
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": { allow_single_deselect: true },
+            ".chosen-select-no-single": { disable_search_threshold: 10 },
+            ".chosen-select-no-results": { no_results_text: "Oopss!!! Nothing found..." },
+            ".chosen-select-width": { width: "95%" }
+        };
+
+
+        // Capture from inputs
+        $("#submit").on("click", function (event) {
+            console.log("SUBMIT")
+            event.preventDefault();
+
+            // Form Validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    console.log("This is form-control");
+
+                    if ($(this).val() === "") {
+                        console.log("this is invalid");
+
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+                    console.log("this is chosen select");
+
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            // // If all required fields are filled
+
+            if (validateForm()) {
+
+                var newFriends = {
+                    name: $("#yourname").val().trim(),
+                    photo: $("#yourphoto").val().trim(),
+                    score: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                // Grab the URL of the website
+
+                // AJAX post the data to the friends API.
+                $.post("/api/friends", newFriends, function (data) {
+                    // console.log("DATA: ", data);
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+
+                    // Show the modal with the best match
+                    $("#resultsModal").modal("toggle");
+                    alert("It Works!!!");
+                });
+
+            } else {
+                alert("Please fill out all fields before submitting!!!")
+            }
+            return false;
+        });
+    </script>
+    <!-- =================================================================== -->
 </body>
 
 </html>
