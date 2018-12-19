@@ -5,8 +5,8 @@ body{
 .jumbotron {
     /* background-color: rgba(247, 248, 175, 0.74); */
     background: linear-gradient(to right bottom,
-    rgba(238, 255, 178, 0.719),
-    #9cf7e0a6 );
+    rgba(237, 255, 172, 0.719),
+    #83ffe094 );
 }
 
 .lg-width {
