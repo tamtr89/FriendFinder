@@ -1,8 +1,36 @@
+body{
+    background-image: url("./images/bricks_header.jpg")
+}
+
+.jumbotron {
+    /* background-color: rgba(247, 248, 175, 0.74); */
+    background: linear-gradient(to right bottom,
+    rgba(238, 255, 178, 0.719),
+    #9cf7e0a6 );
+}
+
+.lg-width {
+    width: 90%;
+}
+
+
 .sm-width{
-    width: 17%;
+    width: 20%;
     padding: 0 0 0 6px;
     background: rgb(91, 217, 255);
     color: white;
     box-shadow: 1px 2px 4px 2px teal;
 }
 
+
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    color: rgb(68, 11, 95);
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+}

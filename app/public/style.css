@@ -1,4 +1,10 @@
 body {
     text-align: center;
-    
+    background-image: url("./images/beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.jumbotron {
+    background-color: rgba(240, 248, 255, 0.384);
 }
