@@ -227,38 +227,34 @@
                 </div>
             </footer>
 
-        
-            <!-- Christina's MODAL -->
+
+            <!-- MODAL -->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                 Launch demo modal
-            </button>
+            </button> -->
 
             <!-- Modal -->
-            <div id="results-modal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
+            <div id="results-modal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalCenterTitle">You found your new friend!!!</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+
                         <div class="modal-body">
-                            ...
                             <h1>Best Match</h1>
-                            <div id="match-name" alt="">
-
-                            </div>
-                            
+                            <div id="match-name" alt=""></div>
                             <img src="" alt="" id="match-img">
-
-                            
                         </div>
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+
                         </div>
                     </div>
                 </div>
@@ -267,22 +263,10 @@
         </div>
     </div>
 
-    
+
 
     <!-- =================================================================== -->
     <script type="text/javascript">
-        // Chosen CSS
-        // var config = {
-        //     ".chosen-select": {},
-        //     ".chosen-select-deselect": { allow_single_deselect: true },
-        //     ".chosen-select-no-single": { disable_search_threshold: 10 },
-        //     ".chosen-select-no-results": { no_results_text: "Oopss!!! Nothing found..." },
-        //     ".chosen-select-width": { width: "95%" }
-        // };
-
-        // for (var selector in config) {
-        //     jQuery(selector).chosen(config[selector]);
-        // }
 
         // Capture from inputs
         $("#submit").on("click", function (event) {
@@ -342,14 +326,15 @@
 
                     // Show the modal with the best match
                     $("#results-modal").modal("toggle");
-                    // $("#results-modal").modal("show");
                     // alert("It Works!!!");
                 });
 
             } else {
                 alert("Please fill out all fields before submitting!!!")
             }
-            return false;
+            // Clear the form name and photo 
+            $("#yourname").val("");
+            $("#yourphoto").val("");
         });
     </script>
     <!-- =================================================================== -->
