@@ -1,43 +1,48 @@
 
 var friends = require("../data/friends");
-var path = require("path");
+// var path = require("path");
 
 
 module.exports = function (app) {
     // API GET requests
     app.get("/api/friends", function (req, res) {
-        console.log("GETTING FRIENDS")
+        // console.log("GETTING FRIENDS")
         res.json(friends);
     })
 
     // User submits a survey form and it submits data to the server
+    // We need to determine who has the closet answer to the user
 
     app.post("/api/friends", function (req, res) {
-
         // Get user input data
         var bestMatch = {
             name: "",
             photo: "",
-            friendDiff: 1000
+            friendDiff: 1000 //track the difference between their answer
         };
 
         var userData = req.body;
+        var newScores = userData.score;
+
         console.log("NEW FRIEND", userData);
         console.log("----------------------------------------------------------");
-
-        var newScores = userData.score;
         console.log("\n newSCOREs is: ", newScores);
 
         userData.routeName = userData.name.replace(/\s+/g, "").toLowerCase();
         var totalDifference = 0;
 
+        // Nested for loop
         //loop through the friends data array of objects to get each friends scores
         for (var i = 0; i < friends.length; i++) {
             // console.log("Friends[i]", friends[i]); 
             totalDifference = 0;
-            //Grab newScores from user, loop over all the scores 
+
+            //Grab newScores from user, loop through all the scores of each friend 
             for (var j = 0; j < friends[i].scores[j]; j++) {
+
                 //Calculate the difference between the scores and sum them into the totalDifference 
+                // Math.abs method: returns the absolute value of a number
+
                 totalDifference += Math.abs(parseInt(newScores[j]) - parseInt(friends[i].scores[j]));
                 // console.log("\n new score[j]:******" + newScores[j]);
                 // console.log("\n Friend[i].scores[j]: ----------------------" + friends[i].scores[j]);
@@ -52,7 +57,7 @@ module.exports = function (app) {
                     bestMatch.photo = friends[i].photo;
                     bestMatch.friendDiff = totalDifference;
 
-                } else  {
+                } else {
                     console.log("NO MATCH");
                 }
 
